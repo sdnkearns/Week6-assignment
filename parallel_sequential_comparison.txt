@@ -1,0 +1,21 @@
+Running benchmark: 100 iteration(s), 5 image(s) each
+
+=== Benchmark: goroutine pipeline (avg) ===
+  Jobs         : 5 total, 5 ok, 0 failed
+  Wall time    : 52.889s
+  Throughput   : 0.10 jobs/sec
+  Stage totals (summed across all jobs):
+    load       : 42.189197s
+    resize     : 17.338274s
+    grayscale  : 2.028283s
+    save       : 489.353ms
+
+=== Benchmark: sequential (avg) ===
+  Jobs         : 5 total, 5 ok, 0 failed
+  Wall time    : 55.129s
+  Throughput   : 0.09 jobs/sec
+  Stage totals (summed across all jobs):
+    load       : 41.077623s
+    resize     : 13.027049s
+    grayscale  : 369.934ms
+    save       : 498.486ms
